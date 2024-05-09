@@ -7,11 +7,7 @@ export default function Header() {
             <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5">
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                     <Link to="/" className="flex items-center">
-                        <img
-                            src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png"
-                            className="mr-3 h-12"
-                            alt="Logo"
-                        />
+                        <h1></h1>
                     </Link>
                     <div className="flex items-center lg:order-2">
                         <Link
