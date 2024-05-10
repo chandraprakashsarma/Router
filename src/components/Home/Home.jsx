@@ -226,6 +226,8 @@ export default function Home() {
             </div>
           ))}
         </div>
+
+        
         {/* Hiring Banner */}
         <div className="flex flex-col items-center gap-x-4 gap-y-4 py-16 md:flex-row">
           <div className="space-y-6">
