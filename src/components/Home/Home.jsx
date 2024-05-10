@@ -207,27 +207,9 @@ export default function Home() {
       </div>
 
 
-      <h1 className="mt-8 text-3xl font-bold tracking-tight text-black md:text-4xl lg:text-6xl">
-            Portfolio
-            </h1>
-      <div className="grid grid-cols-1 gap-4 gap-y-6 border-b border-gray-300 py-12 pb-20 md:grid-cols-2 lg:grid-cols-4">
-        
-          {users.map((user) => (
-            <div className="rounded-md border" key={user.name}>
-              <img
-                src={user.image}
-                alt={user.name}
-                className="h-[300px] w-full rounded-lg object-cover "
-              />
-              <p className="mt-6 w-full px-2 text-xl  font-semibold text-gray-900">{user.name}</p>
-              <p className="w-full px-2 pb-6 text-sm font-semibold text-gray-500">
-                {user.position}
-              </p>
-            </div>
-          ))}
-        </div>
 
-        
+
+
         {/* Hiring Banner */}
         <div className="flex flex-col items-center gap-x-4 gap-y-4 py-16 md:flex-row">
           <div className="space-y-6">
