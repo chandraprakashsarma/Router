@@ -47,6 +47,7 @@ export default function Header() {
                                 >
                                     Portfolio
                                 </NavLink>
+                                
                             </li>
                             <li>
                                 <NavLink
@@ -93,6 +94,14 @@ export default function Header() {
                     </div>
                 </div>
             </nav>
-        </header>
+
+
+
+            
+
+
+
+
+       </header>
     );
 }

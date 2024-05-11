@@ -1,4 +1,7 @@
-import React from 'react'
+import React, {useState } from 'react'
+import Navbar from '../Navbar/Navbar'
+import Button from "../Navbar/Button";
+
 
 const users = [
     {
@@ -51,12 +54,32 @@ const users = [
     },
   ]
 
+
+
 export default function Project() {
+  
     return (
 
         <>
-        
+       {/* Navbar */}
+       <section
+      className="h-screen bg-Hero bg-cover
+      font-[Poppins] md:bg-top bg-center"
+    >
+      <Navbar />
+      <div className="flex flex-col justify-center text-center items-center h-3/4">
+        <h2 className="text-white text-2xl font-medium ">Fashion Tips</h2>
+        <h1 className="md:text-5xl text-3xl text-white font-semibold py-5">
+          Items every woman should have
+        </h1>
+        <div className="text-xl">
+          <Button />
+        </div>
+      </div>
+    </section> 
        
+       
+       {/* Porttail */}
         <h1 className="mt-8 text-3xl font-bold tracking-tight text-black md:text-4xl lg:text-6xl">
             Portfolio
             </h1>
