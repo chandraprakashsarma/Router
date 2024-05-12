@@ -13,6 +13,7 @@ import Github, { githubInfoLoader } from './components/Github/Github.jsx'
 import Project from './components/Project/Project.jsx'
 import UIComponent from './components/UIComponent/UIComponent.jsx'
 import StaticComp from './components/StaticComp/StaticComp.jsx'
+import Accordion from './components/UIComponent/Accordion.jsx'
 
 // const router = createBrowserRouter([
 //   {
@@ -45,6 +46,7 @@ const router = createBrowserRouter(
       <Route path='about' element={<About />} />
       <Route path='contact' element={<Contact />} />
       <Route path='uicomponent' element={<UIComponent/>} />
+      <Route path='accordion' element={<Accordion/>} />
       <Route path='user/:userid' element={<User />} />
       <Route 
       loader={githubInfoLoader}
