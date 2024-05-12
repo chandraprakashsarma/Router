@@ -1,86 +1,452 @@
-import React, {useState } from 'react'
+import React from 'react'
+import myImage from '../../assets/Logo.png';
+import { Link } from 'react-router-dom';
 
 
 const users = [
     {
-      name: 'Todo List App',
-      image:
-        'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=600&w=600&ixid=eyJhcHBfaWQiOjE3Nzg0fQ',
+      name: 'Accordion',
+      src:myImage,
+      route: '/accordion',
+      alt: 'Image 1',
       position: 'React',
     },
     {
-      name: 'Weather App',
-      image:
-        'https://images.generated.photos/vBRCiI_3UM4l40sU8s7fCwbJwzDwRTGpebzPkfHFsY4/rs:fit:512:512/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/ODgyMTAyLmpwZw.jpg',
-      position: 'React',
-    },
-    {
-      name: 'Calculator',
-      image:
-        'https://images.unsplash.com/photo-1549351512-c5e12b11e283?q=80&fm=jpg&crop=faces&fit=crop&h=600&w=600',
-      position: 'Concept',
-    },
-    {
-      name: 'Random Quote Generator',
-      image:
-        'https://images.unsplash.com/photo-1485960994840-902a67e187c8?q=80&fm=jpg&crop=faces&fit=crop&h=600&w=600',
-      position: 'Concept',
-    },
-    {
-      name: 'Photo Gallery',
-      image:
-        'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&crop=faces&fit=crop&h=600&w=600',
-      position: 'UI Component',
-    },
-    {
-      name: 'Timer/Stopwatch',
-      image:
-        'https://images.generated.photos/lEhPUYYfYr9IOt13WZZGf2zbXZnCYdU1wUp7gcu_99c/rs:fit:512:512/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/Njg5NTQ5LmpwZw.jpg',
-      position: 'With Example',
-    },
-    {
-      name: 'Quiz App',
-      image:
-        'https://images.pexels.com/photos/2269872/pexels-photo-2269872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      position: 'Fatch and Showing',
-    },
-    {
-      name: 'Recipe Finder',
-      image:
-        'https://images.unsplash.com/photo-1456327102063-fb5054efe647?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=600&w=600',
-      position: 'Login - Log Out Form ',
-    },
+        name: 'Alerts',
+        src:myImage,
+        route: '/UIComponent',
+        alt: 'Image 1',
+        position: 'React',
+      },
+      {
+        name: 'Avatar',
+        src:myImage,
+        route: '/UIComponent',
+        alt: 'Image 1',
+        position: 'React',
+      },
+      {
+        name: 'Banner',
+        src:myImage,
+        route: '/UIComponent',
+        alt: 'Image 1',
+        position: 'React',
+      },
+      {
+        name: 'Badge',
+        src:myImage,
+        route: '/UIComponent',
+        alt: 'Image 1',
+        position: 'React',
+      },
+      {
+          name: 'Navigation',
+          src:myImage,
+          route: '/UIComponent',
+          alt: 'Image 1',
+          position: 'React',
+        },
+        {
+          name: 'Breadcrumb',
+          src:myImage,
+          route: '/UIComponent',
+          alt: 'Image 1',
+          position: 'React',
+        },
+        {
+          name: 'Buttons',
+          src:myImage,
+          route: '/UIComponent',
+          alt: 'Image 1',
+          position: 'React',
+        },
+        {
+          name: 'Group',
+          src:myImage,
+          route: '/UIComponent',
+          alt: 'Image 1',
+          position: 'React',
+        },
+        {
+            name: 'Card',
+            src:myImage,
+            route: '/UIComponent',
+            alt: 'Image 1',
+            position: 'React',
+          },
+          {
+            name: 'Carousel',
+            src:myImage,
+            route: '/UIComponent',
+            alt: 'Image 1',
+            position: 'React',
+          },
+          {
+            name: 'Chat Bubble',
+            src:myImage,
+            route: '/UIComponent',
+            alt: 'Image 1',
+            position: 'React',
+          },
+          {
+            name: 'Clipboard',
+            src:myImage,
+            route: '/UIComponent',
+            alt: 'Image 1',
+            position: 'React',
+          },
+          {
+              name: 'Mockups',
+              src:myImage,
+              route: '/UIComponent',
+              alt: 'Image 1',
+              position: 'React',
+            },
+            {
+              name: 'Drawer',
+              src:myImage,
+              route: '/UIComponent',
+              alt: 'Image 1',
+              position: 'React',
+            },
+            {
+              name: 'Dropdowns',
+              src:myImage,
+              route: '/UIComponent',
+              alt: 'Image 1',
+              position: 'React',
+            },
+            {
+              name: 'Footer',
+              src:myImage,
+              route: '/UIComponent',
+              alt: 'Image 1',
+              position: 'React',
+            },
+            {
+                name: 'Forms',
+                src:myImage,
+                route: '/UIComponent',
+                alt: 'Image 1',
+                position: 'React',
+              },
+              {
+                name: 'Gallery',
+                src:myImage,
+                route: '/UIComponent',
+                alt: 'Image 1',
+                position: 'React',
+              },
+              {
+                name: 'Indicators',
+                src:myImage,
+                route: '/UIComponent',
+                alt: 'Image 1',
+                position: 'React',
+              },
+              {
+                name: 'Jumbotron',
+                src:myImage,
+                route: '/UIComponent',
+                alt: 'Image 1',
+                position: 'React',
+              },
+              {
+                  name: 'KBD',
+                  src:myImage,
+                  route: '/UIComponent',
+                  alt: 'Image 1',
+                  position: 'React',
+                },
+                {
+                  name: 'List Group',
+                  src:myImage,
+                  route: '/UIComponent',
+                  alt: 'Image 1',
+                  position: 'React',
+                },
+                {
+                  name: 'Mega Menu',
+                  src:myImage,
+                  route: '/UIComponent',
+                  alt: 'Image 1',
+                  position: 'React',
+                },
+                {
+                  name: 'Modal',
+                  src:myImage,
+                  route: '/UIComponent',
+                  alt: 'Image 1',
+                  position: 'React',
+                },
+                {
+                    name: 'Navbar',
+                    src:myImage,
+                    route: '/UIComponent',
+                    alt: 'Image 1',
+                    position: 'React',
+                  },
+                  {
+                    name: 'Pagination',
+                    src:myImage,
+                    route: '/UIComponent',
+                    alt: 'Image 1',
+                    position: 'React',
+                  },
+                  {
+                    name: 'Popover',
+                    src:myImage,
+                    route: '/UIComponent',
+                    alt: 'Image 1',
+                    position: 'React',
+                  },
+                  {
+                    name: 'Progress',
+                    src:myImage,
+                    route: '/UIComponent',
+                    alt: 'Image 1',
+                    position: 'React',
+                  },
+                  {
+                      name: 'Rating',
+                      src:myImage,
+                      route: '/UIComponent',
+                      alt: 'Image 1',
+                      position: 'Javascript',
+                    },
+                    {
+                      name: 'Sidebar',
+                      src:myImage,
+                      route: '/UIComponent',
+                      alt: 'Image 1',
+                      position: 'Javascript',
+                    },
+                    {
+                      name: 'Skeleton',
+                      src:myImage,
+                      route: '/UIComponent',
+                      alt: 'Image 1',
+                      position: 'Javascript',
+                    },
+                    {
+                      name: 'Speed Dial',
+                      src:myImage,
+                      route: '/UIComponent',
+                      alt: 'Image 1',
+                      position: 'Javascript',
+                    },
+                    {
+                        name: 'Spinner',
+                        src:myImage,
+                        route: '/UIComponent',
+                        alt: 'Image 1',
+                        position: 'Javascript',
+                      },
+                      {
+                        name: 'Stepper',
+                        src:myImage,
+                        route: '/UIComponent',
+                        alt: 'Image 1',
+                        position: 'Javascript',
+                      },
+                      {
+                        name: 'Tables',
+                        src:myImage,
+                        route: '/UIComponent',
+                        alt: 'Image 1',
+                        position: 'Javascript',
+                      },
+                      {
+                        name: 'Tabs',
+                        src:myImage,
+                        route: '/UIComponent',
+                        alt: 'Image 1',
+                        position: 'Javascript',
+                      },
+                      {
+                          name: 'Timeline',
+                          src:myImage,
+                          route: '/UIComponent',
+                          alt: 'Image 1',
+                          position: 'Javascript',
+                        },
+                        {
+                          name: 'Toast',
+                          src:myImage,
+                          route: '/UIComponent',
+                          alt: 'Image 1',
+                          position: 'Javascript',
+                        },
+                        {
+                          name: 'Tooltips',
+                          src:myImage,
+                          route: '/UIComponent',
+                          alt: 'Image 1',
+                          position: 'Javascript',
+                        },
+                        {
+                          name: 'Typography',
+                          src:myImage,
+                          route: '/UIComponent',
+                          alt: 'Image 1',
+                          position: 'React',
+                        },
+                        {
+                          name: 'Video',
+                          src:myImage,
+                          route: '/UIComponent',
+                          alt: 'Image 1',
+                          position: 'React',
+                        },
+                        {
+                          name: 'Forms',
+                          src:myImage,
+                          route: '/UIComponent',
+                          alt: 'Image 1',
+                          position: 'React',
+                        },
+                        {
+                            name: 'Input Field',
+                            src:myImage,
+                            route: '/UIComponent',
+                            alt: 'Image 1',
+                            position: 'React',
+                          },
+                          {
+                            name: 'File Input',
+                            src:myImage,
+                            route: '/UIComponent',
+                            alt: 'Image 1',
+                            position: 'React',
+                          },
+                          {
+                            name: 'Search Input',
+                            src:myImage,
+                            route: '/UIComponent',
+                            alt: 'Image 1',
+                            position: 'React',
+                          },
+                          {
+                            name: 'Select',
+                            src:myImage,
+                            route: '/UIComponent',
+                            alt: 'Image 1',
+                            position: 'React',
+                          },
+                          {
+                              name: 'Textarea',
+                              src:myImage,
+                              route: '/UIComponent',
+                              alt: 'Image 1',
+                              position: 'React',
+                            },
+                            {
+                              name: 'Checkbox',
+                              src:myImage,
+                              route: '/UIComponent',
+                              alt: 'Image 1',
+                              position: 'React',
+                            },
+                            {
+                              name: 'Radio',
+                              src:myImage,
+                              route: '/UIComponent',
+                              alt: 'Image 1',
+                              position: 'React',
+                            },
+                            {
+                              name: 'Toggle',
+                              src:myImage,
+                              route: '/UIComponent',
+                              alt: 'Image 1',
+                              position: 'React',
+                            },
+                            {
+                                name: 'Range',
+                                src:myImage,
+                                route: '/UIComponent',
+                                alt: 'Image 1',
+                                position: 'React',
+                              },
+                              {
+                                name: 'Headings',
+                                src:myImage,
+                                route: '/UIComponent',
+                                alt: 'Image 1',
+                                position: 'React',
+                              },
+                              {
+                                name: 'Paragraphs',
+                                src:myImage,
+                                route: '/UIComponent',
+                                alt: 'Image 1',
+                                position: 'React',
+                              },
+                              {
+                                name: 'Blockquote',
+                                src:myImage,
+                                route: '/UIComponent',
+                                alt: 'Image 1',
+                                position: 'React',
+                              },
+                              {
+                                  name: 'Images',
+                                  src:myImage,
+                                  route: '/UIComponent',
+                                  alt: 'Image 1',
+                                  position: 'React',
+                                },
+                                {
+                                  name: 'Lists',
+                                  src:myImage,
+                                  route: '/UIComponent',
+                                  alt: 'Image 1',
+                                  position: 'React',
+                                },
+                                {
+                                  name: 'Links',
+                                  src:myImage,
+                                  route: '/UIComponent',
+                                  alt: 'Image 1',
+                                  position: 'React',
+                                },
+                                {
+                                  name: 'Text',
+                                  src:myImage,
+                                  route: '/UIComponent',
+                                  alt: 'Image 1',
+                                  position: 'React',
+                                },
+                                {
+                                  name: 'Label',
+                                  src:myImage,
+                                  route: '/UIComponent',
+                                  alt: 'Image 1',
+                                  position: 'React',
+                                },
+                                
   ]
 
-
-
 export default function Project() {
-  
     return (
 
         <>
-      
-       
-       {/* Porttail */}
-        <h1 className="mt-8 text-3xl font-bold tracking-tight text-black md:text-4xl lg:text-6xl">
-            Portfolio
-            </h1>
-      <div className="grid grid-cols-1 gap-4 gap-y-6 border-b border-gray-300 py-12 pb-20 md:grid-cols-2 lg:grid-cols-4">
         
-          {users.map((user) => (
-            <div className="rounded-md border" key={user.name}>
-              <img
-                src={user.image}
-                alt={user.name}
-                className="h-[300px] w-full rounded-lg object-cover "
-              />
-              <p className="mt-6 w-full px-2 text-xl  font-semibold text-gray-900">{user.name}</p>
-              <p className="w-full px-2 pb-6 text-sm font-semibold text-gray-500">
-                {user.position}
-              </p>
-            </div>
-          ))}
-        </div>
+       
+        <h1 className="mt-8 mb-6 text-3xl font-bold tracking-tight text-black md:text-4xl lg:text-6xl">
+            My Project
+        </h1>
+
+    <div className="grid grid-cols-4 gap-4 ">
+    {users.map((user, index) => (
+        <Link to={user.route} key={index} className=" p-2 rounded-md border border-gray-500 hover:bg-gray-200">
+          {/*<img src={user.src} alt={user.alt} className="h-auto max-w-full rounded-lg" />*/}
+          <h1 className="mt-8 mb-6 text-3xl font-bold tracking-tight text-black md:text-4xl lg:text-5xl">{user.name}</h1>
+          <h1 className="mt-8 mb-6 text-3xl font-bold tracking-tight text-black md:text-4xl lg:text-2xl">{user.position}</h1>
+        </Link>
+      ))}    
+
+      </div>
         </>
         
     )

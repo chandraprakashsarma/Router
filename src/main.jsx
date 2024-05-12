@@ -14,6 +14,8 @@ import Project from './components/Project/Project.jsx'
 import UIComponent from './components/UIComponent/UIComponent.jsx'
 import StaticComp from './components/StaticComp/StaticComp.jsx'
 import Accordion from './components/UIComponent/Accordion.jsx'
+import Javascript from './components/Javascript/Javascript.jsx'
+import BasicReact from './components/React/BasicReact.jsx'
 
 // const router = createBrowserRouter([
 //   {
@@ -46,6 +48,8 @@ const router = createBrowserRouter(
       <Route path='about' element={<About />} />
       <Route path='contact' element={<Contact />} />
       <Route path='uicomponent' element={<UIComponent/>} />
+      <Route path='javascript' element={<Javascript/>} />
+      <Route path='react' element={<BasicReact/>} />
       <Route path='accordion' element={<Accordion/>} />
       <Route path='user/:userid' element={<User />} />
       <Route 

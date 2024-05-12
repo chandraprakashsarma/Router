@@ -40,7 +40,7 @@ const users = [
         position: 'React',
       },
       {
-          name: 'Bottom Navigation',
+          name: 'Navigation',
           src:myImage,
           route: '/UIComponent',
           alt: 'Image 1',
@@ -61,7 +61,7 @@ const users = [
           position: 'React',
         },
         {
-          name: 'Button Group',
+          name: 'Group',
           src:myImage,
           route: '/UIComponent',
           alt: 'Image 1',
@@ -96,7 +96,7 @@ const users = [
             position: 'React',
           },
           {
-              name: 'Device Mockups',
+              name: 'Mockups',
               src:myImage,
               route: '/UIComponent',
               alt: 'Image 1',
@@ -236,7 +236,7 @@ const users = [
                       position: 'React',
                     },
                     {
-                        name: 'Spinner Mockups',
+                        name: 'Spinner',
                         src:myImage,
                         route: '/UIComponent',
                         alt: 'Image 1',
@@ -418,7 +418,7 @@ const users = [
                                   position: 'React',
                                 },
                                 {
-                                  name: 'Floating Label',
+                                  name: 'Label',
                                   src:myImage,
                                   route: '/UIComponent',
                                   alt: 'Image 1',
@@ -433,16 +433,16 @@ export default function UIComponent() {
         <>
         
        
-        <h1 className="mt-8 text-3xl font-bold tracking-tight text-black md:text-4xl lg:text-6xl">
-            Portfolio
+        <h1 className="mt-8 mb-6 text-3xl font-bold tracking-tight text-black md:text-4xl lg:text-6xl">
+        UI Component
         </h1>
 
     <div className="grid grid-cols-4 gap-4 ">
     {users.map((user, index) => (
-        <Link to={user.route} key={index} className=" p-2 rounded-md rounded-md border border-gray-500">
-          <img src={user.src} alt={user.alt} className="h-auto max-w-full rounded-lg" />
-          <p className="mt-6 w-full px-2 text-xl  font-semibold text-gray-900">{user.name}</p>
-          <p className="w-full px-2 pb-6 text-sm font-semibold text-gray-500">{user.position}</p>
+        <Link to={user.route} key={index} className=" p-2 rounded-md border border-gray-500 hover:bg-gray-200">
+          {/*<img src={user.src} alt={user.alt} className="h-auto max-w-full rounded-lg" />*/}
+          <h1 className="mt-8 mb-6 text-3xl font-bold tracking-tight text-black md:text-4xl lg:text-5xl">{user.name}</h1>
+          <h1 className="mt-8 mb-6 text-3xl font-bold tracking-tight text-black md:text-4xl lg:text-2xl">{user.position}</h1>
         </Link>
       ))}    
 

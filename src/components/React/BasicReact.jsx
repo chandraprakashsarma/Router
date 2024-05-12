@@ -427,14 +427,14 @@ const users = [
                                 
   ]
 
-export default function Portfolio() {
+export default function BasicReact() {
     return (
 
         <>
         
        
         <h1 className="mt-8 mb-6 text-3xl font-bold tracking-tight text-black md:text-4xl lg:text-6xl">
-        Portfolio
+            React Basic Concept
         </h1>
 
     <div className="grid grid-cols-4 gap-4 ">
