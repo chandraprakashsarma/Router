@@ -12,7 +12,7 @@ const users = [
       position: 'React',
     },
     {
-        name: 'Alerts',
+        name: 'Forms',
         src:myImage,
         route: '/UIComponent',
         alt: 'Image 1',
@@ -124,7 +124,7 @@ const users = [
               position: 'React',
             },
             {
-                name: 'Forms',
+                name: 'Alerts',
                 src:myImage,
                 route: '/UIComponent',
                 alt: 'Image 1',

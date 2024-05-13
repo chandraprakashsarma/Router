@@ -1,5 +1,46 @@
 import React from 'react'
 import myImage from '../../assets/myImage.jpg';
+import MultipleProgressBarsWithTitle from './ProgressBars';
+import Timeline from './Timeline';
+
+const timelineItems = [
+  {
+    date: "2018 - Present",
+    title: "Frontend Web Developer",
+    description: "Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.",
+    link: "#",
+    linkText: "Learn more"
+  },
+  {
+    date: "2016 - 2018",
+    title: "Marketing UI design in Figma",
+    description: "All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project."
+  },
+  {
+    date: "2014 - 1016",
+    title: "E-Commerce UI code in Tailwind CSS",
+    description: "Get started with dozens of web components and interactive elements built on top of Tailwind CSS."
+  }
+];
+const EducationalQualifications = [
+  {
+    date: "2018 - 2019",
+    title: "Master of Science",
+    description: "Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.",
+    link: "#",
+    linkText: "Learn more"
+  },
+  {
+    date: "2016 - 2018",
+    title: "Bachelor of Science",
+    description: "All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project."
+  },
+  {
+    date: "2014 - 1016",
+    title: "Higher Schoold Graduation",
+    description: "Get started with dozens of web components and interactive elements built on top of Tailwind CSS."
+  }
+];
 
 
 export default function Home() {
@@ -48,12 +89,6 @@ export default function Home() {
         </div>
       </div>
 
-
-      
-
-  
-
-
       {/* Features Section */}
       <div className="mx-auto my-32 max-w-7xl px-2 lg:px-8">
       
@@ -77,7 +112,7 @@ export default function Home() {
                 />
               </svg>
             </div>
-            <h3 className="mt-8 text-lg font-semibold text-black">Secured Payments</h3>
+            <h3 className="mt-8 text-lg font-semibold text-black">Web Design</h3>
             <p className="mt-4 text-sm text-gray-600">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
               officia consequat duis enim velit mollit.
@@ -100,7 +135,7 @@ export default function Home() {
                 />
               </svg>
             </div>
-            <h3 className="mt-8 text-lg font-semibold text-black">Fast & Easy to Load</h3>
+            <h3 className="mt-8 text-lg font-semibold text-black">Web Development</h3>
             <p className="mt-4 text-sm text-gray-600">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
               officia consequat duis enim velit mollit.
@@ -123,7 +158,7 @@ export default function Home() {
                 />
               </svg>
             </div>
-            <h3 className="mt-8 text-lg font-semibold text-black">Light & Dark Version</h3>
+            <h3 className="mt-8 text-lg font-semibold text-black">Responsive Design</h3>
             <p className="mt-4 text-sm text-gray-600">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
               officia consequat duis enim velit mollit.
@@ -146,7 +181,7 @@ export default function Home() {
                 />
               </svg>
             </div>
-            <h3 className="mt-8 text-lg font-semibold text-black">Filter Blocks</h3>
+            <h3 className="mt-8 text-lg font-semibold text-black">React JS, Javascript, CSS</h3>
             <p className="mt-4 text-sm text-gray-600">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
               officia consequat duis enim velit mollit.
@@ -155,8 +190,8 @@ export default function Home() {
         </div>
       </div>
 
-
-
+      <MultipleProgressBarsWithTitle/>
+      <Timeline items={timelineItems} Education={EducationalQualifications}/>
 
 
         {/* Hiring Banner */}

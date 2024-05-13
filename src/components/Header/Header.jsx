@@ -1,9 +1,24 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {Link, NavLink} from 'react-router-dom'
 import Navbar from '../Navbar/Navbar'
 import Button from "../Navbar/Button";
 
 export default function Header() {
+    const [lightMode, setLightMode] = useState(false); // Made it true if you want to load your site light mode primary
+
+  lightMode
+    ? document.body.classList.add("light")
+    : document.body.classList.remove("light");
+
+  const handleMode = () => {
+    if (!lightMode) {
+      setLightMode(true);
+      document.body.classList.add("light");
+    } else {
+      setLightMode(false);
+      document.body.classList.remove("light");
+    }
+  };
     return (
         <>
         <header className="shadow sticky z-50 top-0">
@@ -25,6 +40,17 @@ export default function Header() {
                             className="text-white bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
                         >
                             Get started
+                        </Link>
+                        <Link
+                            to="#"
+                            className="text-white bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
+                        >
+                            <button
+          className={
+            lightMode ? "light-mode-switch active" : "light-mode-switch"
+          }
+          onClick={() => handleMode()}
+        ></button>
                         </Link>
                     </div>
                     <div
