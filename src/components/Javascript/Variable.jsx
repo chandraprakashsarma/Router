@@ -3,22 +3,28 @@ import React from 'react'
 const tableData = [
     {
       productName: "Const",
-      color: "Silver",
-      category: "Laptop",
-      price: "$2999"
+      color: "Constant value",
+      category: "*",
+      price: "*"
     },
     {
       productName: "Let",
-      color: "White",
-      category: "Laptop PC",
-      price: "$1999"
+      color: "Prefer to use",
+      category: "Block scope and functional scope",
+      price: "*"
     },
     {
       productName: "Var",
-      color: "Black",
-      category: "Accessories",
-      price: "$99"
-    }
+      color: "Prefer not to use",
+      category: "Issue in block scope and functional scope",
+      price: "*"
+    },
+    {
+        productName: "Undefined",
+        color: "let Name",
+        category: "Value not assisgn",
+        price: "*"
+      }
   ];
   
   const Variable = () => {
