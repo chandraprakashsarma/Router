@@ -4,105 +4,105 @@ import { Link } from 'react-router-dom';
 
 
 const users = [
+  {
+    name: 'Variable',
+    src:myImage,
+    route: '/variable',
+    alt: 'Image 1',
+    position: 'Javascript',
+  },
     {
-      name: 'Accordion',
+      name: 'Array',
       src:myImage,
       route: '/accordion',
       alt: 'Image 1',
       position: 'Javascript',
     },
     {
-        name: 'Alerts',
+        name: 'Function',
         src:myImage,
         route: '/UIComponent',
         alt: 'Image 1',
         position: 'Javascript',
       },
       {
-        name: 'Avatar',
+        name: 'Iteration',
         src:myImage,
         route: '/UIComponent',
         alt: 'Image 1',
         position: 'Javascript',
       },
       {
-        name: 'Banner',
+        name: 'Object',
         src:myImage,
         route: '/UIComponent',
         alt: 'Image 1',
         position: 'Javascript',
       },
       {
-        name: 'Badge',
+        name: 'Scope',
         src:myImage,
         route: '/UIComponent',
         alt: 'Image 1',
         position: 'Javascript',
       },
       {
-          name: 'Navigation',
+          name: 'Data Type',
           src:myImage,
           route: '/UIComponent',
           alt: 'Image 1',
           position: 'Javascript',
         },
         {
-          name: 'Breadcrumb',
+          name: 'Getter Setter',
           src:myImage,
           route: '/UIComponent',
           alt: 'Image 1',
           position: 'Javascript',
         },
         {
-          name: 'Buttons',
+          name: 'Parent Child',
           src:myImage,
           route: '/UIComponent',
           alt: 'Image 1',
           position: 'Javascript',
         },
         {
-          name: 'Group',
+          name: 'Promises',
           src:myImage,
           route: '/UIComponent',
           alt: 'Image 1',
           position: 'Javascript',
         },
         {
-            name: 'Card',
+            name: 'Event',
             src:myImage,
             route: '/UIComponent',
             alt: 'Image 1',
             position: 'Javascript',
           },
           {
-            name: 'Carousel',
+            name: 'Map',
             src:myImage,
             route: '/UIComponent',
             alt: 'Image 1',
             position: 'Javascript',
           },
           {
-            name: 'Chat Bubble',
+            name: 'JS Async',
             src:myImage,
             route: '/UIComponent',
             alt: 'Image 1',
             position: 'Javascript',
           },
           {
-            name: 'Clipboard',
+            name: 'Scope',
             src:myImage,
             route: '/UIComponent',
             alt: 'Image 1',
             position: 'Javascript',
           },
           {
-              name: 'Mockups',
-              src:myImage,
-              route: '/UIComponent',
-              alt: 'Image 1',
-              position: 'Javascript',
-            },
-            {
               name: 'Drawer',
               src:myImage,
               route: '/UIComponent',
@@ -441,8 +441,8 @@ export default function Javascript() {
     {users.map((user, index) => (
         <Link to={user.route} key={index} className=" p-2 rounded-md border border-gray-500 hover:bg-gray-200">
           {/*<img src={user.src} alt={user.alt} className="h-auto max-w-full rounded-lg" />*/}
-          <h1 className="mt-8 mb-6 text-3xl font-bold tracking-tight text-black md:text-4xl lg:text-5xl">{user.name}</h1>
-          <h1 className="mt-8 mb-6 text-3xl font-bold tracking-tight text-black md:text-4xl lg:text-2xl">{user.position}</h1>
+          <h1 className="mt-8 mb-6 text-3xl font-bold tracking-tight text-black md:text-4xl lg:text-3xl">{user.name}</h1>
+          {/*<h1 className="mt-8 mb-6 text-3xl font-bold tracking-tight text-black md:text-4xl lg:text-2xl">{user.position}</h1>*/}
         </Link>
       ))}    
 
