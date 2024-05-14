@@ -5,105 +5,105 @@ import { Link } from 'react-router-dom';
 
 const users = [
     {
-      name: 'Accordion',
+      name: 'State',
       src:myImage,
       route: '/accordion',
       alt: 'Image 1',
       position: 'React',
     },
     {
-        name: 'Alerts',
+        name: 'Props',
         src:myImage,
         route: '/UIComponent',
         alt: 'Image 1',
         position: 'React',
       },
       {
-        name: 'Avatar',
+        name: 'Controlled Components',
         src:myImage,
         route: '/UIComponent',
         alt: 'Image 1',
         position: 'React',
       },
       {
-        name: 'Banner',
+        name: 'Lifecycle Methods',
         src:myImage,
         route: '/UIComponent',
         alt: 'Image 1',
         position: 'React',
       },
       {
-        name: 'Badge',
+        name: 'Event Handling',
         src:myImage,
         route: '/UIComponent',
         alt: 'Image 1',
         position: 'React',
       },
       {
-          name: 'Navigation',
+          name: 'Keys in React Lists',
           src:myImage,
           route: '/UIComponent',
           alt: 'Image 1',
           position: 'React',
         },
         {
-          name: 'Breadcrumb',
+          name: 'Router',
           src:myImage,
           route: '/UIComponent',
           alt: 'Image 1',
           position: 'React',
         },
         {
-          name: 'Buttons',
+          name: 'Hooks',
           src:myImage,
           route: '/UIComponent',
           alt: 'Image 1',
           position: 'React',
         },
         {
-          name: 'Group',
+          name: 'Context API',
           src:myImage,
           route: '/UIComponent',
           alt: 'Image 1',
           position: 'React',
         },
         {
-            name: 'Card',
+            name: 'useState',
             src:myImage,
             route: '/UIComponent',
             alt: 'Image 1',
             position: 'React',
           },
           {
-            name: 'Carousel',
+            name: 'useEffect',
             src:myImage,
             route: '/UIComponent',
             alt: 'Image 1',
             position: 'React',
           },
           {
-            name: 'Chat Bubble',
+            name: 'useContext',
             src:myImage,
             route: '/UIComponent',
             alt: 'Image 1',
             position: 'React',
           },
           {
-            name: 'Clipboard',
+            name: 'useRef',
             src:myImage,
             route: '/UIComponent',
             alt: 'Image 1',
             position: 'React',
           },
           {
-              name: 'Mockups',
+              name: 'Conditional Rendering',
               src:myImage,
               route: '/UIComponent',
               alt: 'Image 1',
               position: 'React',
             },
             {
-              name: 'Drawer',
+              name: 'Handle Forms',
               src:myImage,
               route: '/UIComponent',
               alt: 'Image 1',
@@ -431,18 +431,16 @@ export default function BasicReact() {
     return (
 
         <>
-        
-       
         <h1 className="mt-8 mb-6 text-3xl font-bold tracking-tight text-black md:text-4xl lg:text-6xl">
             React Basic Concept
         </h1>
 
-    <div className="grid grid-cols-4 gap-4 ">
+    <div className="grid grid-cols-3 gap-4 ">
     {users.map((user, index) => (
         <Link to={user.route} key={index} className=" p-2 rounded-md border border-gray-500 hover:bg-gray-200">
           {/*<img src={user.src} alt={user.alt} className="h-auto max-w-full rounded-lg" />*/}
-          <h1 className="mt-8 mb-6 text-3xl font-bold tracking-tight text-black md:text-4xl lg:text-5xl">{user.name}</h1>
-          <h1 className="mt-8 mb-6 text-3xl font-bold tracking-tight text-black md:text-4xl lg:text-2xl">{user.position}</h1>
+          <h1 className="mt-8 mb-6 text-3xl font-bold tracking-tight text-black md:text-4xl lg:text-3xl">{user.name}</h1>
+          {/*<h1 className="mt-8 mb-6 text-3xl font-bold tracking-tight text-black md:text-4xl lg:text-2xl">{user.position}</h1>*/}
         </Link>
       ))}    
 
