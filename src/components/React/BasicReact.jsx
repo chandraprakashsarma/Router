@@ -7,7 +7,7 @@ const users = [
     {
       name: 'State',
       src:myImage,
-      route: '/accordion',
+      route: '/state',
       alt: 'Image 1',
       position: 'React',
     },

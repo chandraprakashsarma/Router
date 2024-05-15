@@ -17,6 +17,10 @@ import Accordion from './components/UIComponent/Accordion.jsx'
 import Javascript from './components/Javascript/Javascript.jsx'
 import BasicReact from './components/React/BasicReact.jsx'
 import Variable from './components/Javascript/Variable.jsx'
+import State from './components/State/State.jsx'
+import Counter from './components/State/Counter.jsx'
+import TodoList from './components/State/TodoList.jsx'
+import Form from './components/State/Form.jsx'
 
 // const router = createBrowserRouter([
 //   {
@@ -49,10 +53,14 @@ const router = createBrowserRouter(
       <Route path='about' element={<About />} />
       <Route path='contact' element={<Contact />} />
       <Route path='uicomponent' element={<UIComponent/>} />
-      <Route path='javascript' element={<Javascript/>} />
-      <Route path='react' element={<BasicReact/>} />
-      <Route path='variable' element={<Variable/>} />
       <Route path='accordion' element={<Accordion/>} />
+      <Route path='javascript' element={<Javascript/>} />
+      <Route path='variable' element={<Variable/>} />
+      <Route path='react' element={<BasicReact/>} />
+      <Route path='state' element={<State/>} />
+      <Route path='count_increment' element={<Counter/>} />
+      <Route path='todo_list' element={<TodoList/>} />
+      <Route path='form_submit' element={<Form/>} />
       <Route path='user/:userid' element={<User />} />
       <Route 
       loader={githubInfoLoader}
