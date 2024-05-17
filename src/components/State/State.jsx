@@ -24,7 +24,14 @@ const users = [
         route: '/form_submit',
         alt: 'Image 1',
         position: 'React',
-      },                           
+      },  
+      {
+        name: 'Weather App API Based',
+        src:myImage,
+        route: '/weather_app',
+        alt: 'Image 1',
+        position: 'React',
+      },                         
   ]
 
 export default function State() {

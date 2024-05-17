@@ -21,6 +21,11 @@ import State from './components/State/State.jsx'
 import Counter from './components/State/Counter.jsx'
 import TodoList from './components/State/TodoList.jsx'
 import Form from './components/State/Form.jsx'
+import WeatherApp from './components/State/WeatherApp.jsx'
+import ArrowFunction from './components/Javascript/ArrowFunction.jsx'
+import Function from './components/Javascript/Function.jsx'
+import EventHandling from './components/EventsHandling/EventHandling.jsx'
+import ButtonComponent from './components/EventsHandling/ButtonComponent.jsx'
 
 // const router = createBrowserRouter([
 //   {
@@ -56,11 +61,18 @@ const router = createBrowserRouter(
       <Route path='accordion' element={<Accordion/>} />
       <Route path='javascript' element={<Javascript/>} />
       <Route path='variable' element={<Variable/>} />
+      <Route path='function' element={<Function/>} />
+      <Route path='arrow_function' element={<ArrowFunction/>} />
+
+
       <Route path='react' element={<BasicReact/>} />
       <Route path='state' element={<State/>} />
       <Route path='count_increment' element={<Counter/>} />
       <Route path='todo_list' element={<TodoList/>} />
       <Route path='form_submit' element={<Form/>} />
+      <Route path='weather_app' element={<WeatherApp/>} />
+      <Route path='event_handling' element={<EventHandling/>} />
+      <Route path='button_component' element={<ButtonComponent/>} />
       <Route path='user/:userid' element={<User />} />
       <Route 
       loader={githubInfoLoader}

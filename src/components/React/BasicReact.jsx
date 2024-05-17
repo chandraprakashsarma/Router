@@ -35,7 +35,7 @@ const users = [
       {
         name: 'Event Handling',
         src:myImage,
-        route: '/UIComponent',
+        route: '/event_handling',
         alt: 'Image 1',
         position: 'React',
       },
