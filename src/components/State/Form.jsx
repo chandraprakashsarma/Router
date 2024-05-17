@@ -38,10 +38,10 @@ function Form() {
 //The form is associated with the handleSubmit function, which is called when the form is submitted.
 //Tailwind CSS classes are used to style the form elements for a modern and clean appearance.
   return (
-    <div className="container mx-auto mt-8">
+    <div className="container mx-auto mt-8 ">
       <h1 className="text-3xl mb-4">User Information Form</h1>
       <form onSubmit={handleSubmit} className="max-w-sm mx-auto">
-        <div className="mb-4">
+        <div className="mb-4 ">
           <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
           <input
             type="text"
