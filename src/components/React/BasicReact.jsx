@@ -110,9 +110,9 @@ const users = [
               position: 'React',
             },
             {
-              name: 'Dropdowns',
+              name: 'Loops',
               src:myImage,
-              route: '/UIComponent',
+              route: '/loops',
               alt: 'Image 1',
               position: 'React',
             },

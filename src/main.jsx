@@ -26,6 +26,8 @@ import ArrowFunction from './components/Javascript/ArrowFunction.jsx'
 import Function from './components/Javascript/Function.jsx'
 import EventHandling from './components/EventsHandling/EventHandling.jsx'
 import ButtonComponent from './components/EventsHandling/ButtonComponent.jsx'
+import Loops from './components/Loops/Loops.jsx'
+import Map from './components/Loops/Map.jsx'
 
 // const router = createBrowserRouter([
 //   {
@@ -63,6 +65,10 @@ const router = createBrowserRouter(
       <Route path='variable' element={<Variable/>} />
       <Route path='function' element={<Function/>} />
       <Route path='arrow_function' element={<ArrowFunction/>} />
+      <Route path='loops' element={<Loops/>} />
+      <Route path='map' element={<Map/>} />
+
+
 
 
       <Route path='react' element={<BasicReact/>} />
