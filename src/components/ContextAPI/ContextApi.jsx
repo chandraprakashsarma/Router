@@ -16,8 +16,8 @@ const users = [
     route: '/todo_form_app',
   },
   {
-    name: 'Higher-Order Functions',
-    route: '/event_handling',
+    name: 'User Authentication',
+    route: '/user_authentication_context_api',
   },
   {
     name: 'Callback Functions',
