@@ -32,6 +32,7 @@ import ContextApi from './components/ContextAPI/ContextApi.jsx'
 import Props from './components/Props/Props.jsx'
 import ContextApp from './components/ContextAPI/ContextApp.jsx'
 import ThemeSwitcherApp from './components/ContextAPI/ThemeSwitcher/ThemeSwitcherApp.jsx'
+import TodoFormApp from './components/ContextAPI/TodoForm/TodoFormApp.jsx'
 
 
 
@@ -98,6 +99,7 @@ const router = createBrowserRouter(
       <Route path='context_api' element={<ContextApi/>} />
       <Route path='context_api_setup_app' element={<ContextApp/>} />
       <Route path='theme_switcher_app' element={<ThemeSwitcherApp/>} />
+      <Route path='todo_form_app' element={<TodoFormApp/>} />
     
       
     

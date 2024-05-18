@@ -12,8 +12,8 @@ const users = [
     route: '/theme_switcher_app',
   },
   {
-    name: 'Function Components',
-    route: '/event_handling',
+    name: 'Todo Form App',
+    route: '/todo_form_app',
   },
   {
     name: 'Higher-Order Functions',
