@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom';
 const users = [
   {
     name: 'Setup & Consume Context API',
-    route: '/context_api',
+    route: '/context_api_setup_app',
   },
   {
-    name: 'Theme App',
-    route: '/context_api',
+    name: 'Theme Switcher App',
+    route: '/theme_switcher_app',
   },
   {
     name: 'Function Components',

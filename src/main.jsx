@@ -30,6 +30,8 @@ import Loops from './components/Loops/Loops.jsx'
 import Map from './components/Loops/Map.jsx'
 import ContextApi from './components/ContextAPI/ContextApi.jsx'
 import Props from './components/Props/Props.jsx'
+import ContextApp from './components/ContextAPI/ContextApp.jsx'
+import ThemeSwitcherApp from './components/ContextAPI/ThemeSwitcher/ThemeSwitcherApp.jsx'
 
 
 
@@ -94,6 +96,8 @@ const router = createBrowserRouter(
 
       { /*Context API Route Example */ }
       <Route path='context_api' element={<ContextApi/>} />
+      <Route path='context_api_setup_app' element={<ContextApp/>} />
+      <Route path='theme_switcher_app' element={<ThemeSwitcherApp/>} />
     
       
     
