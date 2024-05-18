@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 
 const users = [
   {
-    name: 'Setup Context API',
-    route: '/setup_context_api',
+    name: 'Setup & Consume Context API',
+    route: '/context_api',
   },
   {
-    name: 'Arrow Functions',
-    route: '/event_handling',
+    name: 'Theme App',
+    route: '/context_api',
   },
   {
     name: 'Function Components',
