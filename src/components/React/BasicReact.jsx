@@ -14,21 +14,14 @@ const users = [
     {
         name: 'Props',
         src:myImage,
-        route: '/UIComponent',
+        route: '/props',
         alt: 'Image 1',
         position: 'React',
       },
       {
-        name: 'Controlled Components',
+        name: 'Context API',
         src:myImage,
-        route: '/UIComponent',
-        alt: 'Image 1',
-        position: 'React',
-      },
-      {
-        name: 'Lifecycle Methods',
-        src:myImage,
-        route: '/UIComponent',
+        route: '/context_api',
         alt: 'Image 1',
         position: 'React',
       },
@@ -61,7 +54,7 @@ const users = [
           position: 'React',
         },
         {
-          name: 'Context API',
+          name: 'Controlled Components',
           src:myImage,
           route: '/UIComponent',
           alt: 'Image 1',
@@ -117,7 +110,7 @@ const users = [
               position: 'React',
             },
             {
-              name: 'Footer',
+              name: 'Lifecycle Methods',
               src:myImage,
               route: '/UIComponent',
               alt: 'Image 1',
@@ -435,11 +428,11 @@ export default function BasicReact() {
             React Basic Concept
         </h1>
 
-    <div className="grid grid-cols-3 gap-4 ">
+    <div className="grid grid-cols-4 gap-4 ">
     {users.map((user, index) => (
         <Link to={user.route} key={index} className=" p-2 rounded-md border border-gray-500 hover:bg-gray-200">
           {/*<img src={user.src} alt={user.alt} className="h-auto max-w-full rounded-lg" />*/}
-          <h1 className="mt-8 mb-6 text-3xl font-bold tracking-tight text-black md:text-4xl lg:text-3xl">{user.name}</h1>
+          <h1 className="mt-8 mb-6 text-3xl font-bold tracking-tight text-black md:text-4xl lg:text-2xl">{user.name}</h1>
           {/*<h1 className="mt-8 mb-6 text-3xl font-bold tracking-tight text-black md:text-4xl lg:text-2xl">{user.position}</h1>*/}
         </Link>
       ))}    

@@ -28,6 +28,9 @@ import EventHandling from './components/EventsHandling/EventHandling.jsx'
 import ButtonComponent from './components/EventsHandling/ButtonComponent.jsx'
 import Loops from './components/Loops/Loops.jsx'
 import Map from './components/Loops/Map.jsx'
+import ContextApi from './components/ContextAPI/ContextApi.jsx'
+import Props from './components/Props/Props.jsx'
+import SetupContextApi from './components/ContextAPI/SetupContextApi.jsx'
 
 // const router = createBrowserRouter([
 //   {
@@ -49,6 +52,7 @@ import Map from './components/Loops/Map.jsx'
 //     ]
 //   }
 // ])UIComponent
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -85,6 +89,18 @@ const router = createBrowserRouter(
       path='github' 
       element={<Github />}
        />
+
+      { /*Context API Route Example */ }
+      <Route path='context_api' element={<ContextApi/>} />
+      <Route path='setup_context_api' element={<SetupContextApi/>} />
+
+
+
+      { /*Props Route Example */ }
+      <Route path='props' element={<Props/>} />
+
+
+      
     </Route>
   )
 )
