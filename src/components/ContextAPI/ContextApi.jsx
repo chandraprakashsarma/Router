@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const users = [
   {
-    name: 'Setup & Consume Context API',
+    name: 'Basic Setup',
     route: '/context_api_setup_app',
   },
   {
@@ -20,12 +20,12 @@ const users = [
     route: '/user_authentication_context_api',
   },
   {
-    name: 'Callback Functions',
-    route: '/event_handling',
+    name: 'Multi-Language Support',
+    route: '/multi-language_support',
   },
   {
-    name: 'Anonymous Functions',
-    route: '/event_handling',
+    name: 'Multiple Contexts',
+    route: '/multiple_contexts',
   },
   {
     name: 'Function Hoisting',

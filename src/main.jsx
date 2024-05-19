@@ -34,6 +34,8 @@ import ContextApp from './components/ContextAPI/ContextApp.jsx'
 import ThemeSwitcherApp from './components/ContextAPI/ThemeSwitcher/ThemeSwitcherApp.jsx'
 import TodoFormApp from './components/ContextAPI/TodoForm/TodoFormApp.jsx'
 import AuthStatusApp from './components/ContextAPI/AuthStatus/AuthStatusApp.jsx'
+import MultiLangApp from './components/ContextAPI/MultiLangApp/MultiLangApp.jsx'
+import MultiContextsApp from './components/ContextAPI/MultiContextsApp/MultiContextsApp.jsx'
 
 
 
@@ -102,6 +104,8 @@ const router = createBrowserRouter(
       <Route path='theme_switcher_app' element={<ThemeSwitcherApp/>} />
       <Route path='todo_form_app' element={<TodoFormApp/>} />
       <Route path='user_authentication_context_api' element={<AuthStatusApp/>} />
+      <Route path='multi-language_support' element={<MultiLangApp/>} />
+      <Route path='multiple_contexts' element={<MultiContextsApp/>} />
     
       
     
