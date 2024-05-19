@@ -30,12 +30,21 @@ import Loops from './components/Loops/Loops.jsx'
 import Map from './components/Loops/Map.jsx'
 import ContextApi from './components/ContextAPI/ContextApi.jsx'
 import Props from './components/Props/Props.jsx'
-import ContextApp from './components/ContextAPI/ContextApp.jsx'
+import ContextApp from './components/ContextAPI/ContextApi.jsx'
 import ThemeSwitcherApp from './components/ContextAPI/ThemeSwitcher/ThemeSwitcherApp.jsx'
 import TodoFormApp from './components/ContextAPI/TodoForm/TodoFormApp.jsx'
 import AuthStatusApp from './components/ContextAPI/AuthStatus/AuthStatusApp.jsx'
 import MultiLangApp from './components/ContextAPI/MultiLangApp/MultiLangApp.jsx'
 import MultiContextsApp from './components/ContextAPI/MultiContextsApp/MultiContextsApp.jsx'
+import PreviousState from './components/State/PreviousState.jsx'
+import ToggleVisibility from './components/State/ToggleVisibility.jsx'
+import NestedListApp from './components/State/NestedListApp.jsx'
+import DynamicForm from './components/State/DynamicForm.jsx'
+import UndoRedoApp from './components/State/UndoRedoApp.jsx'
+import AccordionApp from './components/State/AccordionApp.jsx'
+import ShoppingCart from './components/State/ShoppingCart.jsx'
+import LikeButton from './components/State/LikeButton.jsx'
+import ModalExample from './components/State/ModalExample.jsx'
 
 
 
@@ -84,11 +93,26 @@ const router = createBrowserRouter(
 
 
       <Route path='react' element={<BasicReact/>} />
+
+      { /* State Example */ }
       <Route path='state' element={<State/>} />
       <Route path='count_increment' element={<Counter/>} />
       <Route path='todo_list' element={<TodoList/>} />
       <Route path='form_submit' element={<Form/>} />
       <Route path='weather_app' element={<WeatherApp/>} />
+      <Route path='previous_state' element={<PreviousState/>} />
+      <Route path='toggle_visibility' element={<ToggleVisibility/>} />
+      <Route path='nested_list_app' element={<NestedListApp/>} />
+      <Route path='dynamic_form' element={<DynamicForm/>} />
+      <Route path='undo_redo_app' element={<UndoRedoApp/>} />
+      <Route path='accordion_app' element={<AccordionApp/>} />
+      <Route path='shopping_cart' element={<ShoppingCart/>} />
+      <Route path='like_button' element={<LikeButton/>} />
+      <Route path='modal_example' element={<ModalExample/>} />
+
+
+
+
       <Route path='event_handling' element={<EventHandling/>} />
       <Route path='button_component' element={<ButtonComponent/>} />
       <Route path='user/:userid' element={<User />} />
