@@ -28,8 +28,8 @@ const users = [
     route: '/multiple_contexts',
   },
   {
-    name: 'Function Hoisting',
-    route: '/event_handling',
+    name: 'E-Commerce Platform',
+    route: '/ecommerce_app',
   },
   {
     name: 'Function Composition',

@@ -48,6 +48,7 @@ import ModalExample from './components/State/ModalExample.jsx'
 import ControlleComponent from './components/State/ControlleComponent/ControlleComponent.jsx'
 import InputControll from './components/State/ControlleComponent/InputControll.jsx'
 import Array from './components/Javascript/Array/Array.jsx'
+import EcommerceApp from './components/ContextAPI/E-commerceApp/E-commerceApp.jsx'
 
 
 
@@ -139,6 +140,7 @@ const router = createBrowserRouter(
       <Route path='user_authentication_context_api' element={<AuthStatusApp/>} />
       <Route path='multi-language_support' element={<MultiLangApp/>} />
       <Route path='multiple_contexts' element={<MultiContextsApp/>} />
+      <Route path='ecommerce_app' element={<EcommerceApp/>} />
     
       
     
