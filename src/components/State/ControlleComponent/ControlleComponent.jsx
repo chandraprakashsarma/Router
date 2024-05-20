@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 
 const users = [
     {
-      name: 'Controlle Component',
-     route: '/controlle_component'
+      name: 'Control Component',
+     route: '/input_controll'
     },
     {
       name: 'Count Increment',
@@ -64,24 +64,12 @@ const users = [
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-export default function State() {
+export default function ControlleComponent() {
     return (
 
         <>
         <h1 className="mt-8 mb-6 text-3xl font-bold tracking-tight text-black md:text-4xl lg:text-6xl">
-            useState State 
+            Basic Concept of Controlled Component 
         </h1>
 
     <div className="grid grid-cols-4 gap-4 ">

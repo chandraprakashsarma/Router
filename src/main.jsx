@@ -45,6 +45,9 @@ import AccordionApp from './components/State/AccordionApp.jsx'
 import ShoppingCart from './components/State/ShoppingCart.jsx'
 import LikeButton from './components/State/LikeButton.jsx'
 import ModalExample from './components/State/ModalExample.jsx'
+import ControlleComponent from './components/State/ControlleComponent/ControlleComponent.jsx'
+import InputControll from './components/State/ControlleComponent/InputControll.jsx'
+import Array from './components/Javascript/Array/Array.jsx'
 
 
 
@@ -82,12 +85,16 @@ const router = createBrowserRouter(
       <Route path='contact' element={<Contact />} />
       <Route path='uicomponent' element={<UIComponent/>} />
       <Route path='accordion' element={<Accordion/>} />
+
+
+      { /*JavaScript Example */ }
       <Route path='javascript' element={<Javascript/>} />
       <Route path='variable' element={<Variable/>} />
       <Route path='function' element={<Function/>} />
       <Route path='arrow_function' element={<ArrowFunction/>} />
       <Route path='loops' element={<Loops/>} />
       <Route path='map' element={<Map/>} />
+      <Route path='array' element={<Array/>} />
 
 
 
@@ -96,6 +103,8 @@ const router = createBrowserRouter(
 
       { /* State Example */ }
       <Route path='state' element={<State/>} />
+      <Route path='controlle_component' element={<ControlleComponent/>} />
+      <Route path='input_controll' element={<InputControll/>} />
       <Route path='count_increment' element={<Counter/>} />
       <Route path='todo_list' element={<TodoList/>} />
       <Route path='form_submit' element={<Form/>} />
