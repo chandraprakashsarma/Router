@@ -173,6 +173,18 @@ const users = [
                                 
   ]
 
+  //Bsic Use of Map Function
+  const items = ['Item 1', 'Item 2', 'Item 3', 'Item 4'];
+
+  
+  //Creating Dynamic Components
+  const products = [
+    { id: 1, name: 'Laptop', price: '$1000' },
+    { id: 2, name: 'Smartphone', price: '$500' },
+    { id: 3, name: 'Tablet', price: '$300' }
+  ];
+  
+
 export default function Javascript() {
     return (
 
@@ -193,7 +205,59 @@ export default function Javascript() {
       ))}    
 
       </div>
+
+
+
+
+
+      <h1 className="mt-8 mb-6 text-3xl font-bold tracking-tight text-black md:text-4xl lg:text-2xl">
+          Bsic Use of Map Function - Rendering Lists of Data
+      </h1>
+      <div className="flex items-center justify-center h-96 bg-gray-100">
+      <div className="container mx-auto w-1/2 bg-white p-8 rounded shadow-lg">
+          <h1>Item List</h1>
+          <ul>
+            {items.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+
+              
+      </div>
+      </div>
+
+
+
+
+
+      <h1 className="mt-8 mb-6 text-3xl font-bold tracking-tight text-black md:text-4xl lg:text-2xl">
+          Creating Dynamic Components - Create multiple instances of a component based on data
+      </h1>
+      <div className="flex items-center justify-center h-96 bg-gray-100">
+      <div className="container mx-auto w-1/2 bg-white p-8 rounded shadow-lg">
+          <h1>Item List</h1>
+          <ul>
+            {items.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+
+              
+      </div>
+      </div>
+
+
+
+
+
+
+
+
+
         </>
         
+        
     )
+    
+
 }
