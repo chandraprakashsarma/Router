@@ -59,6 +59,53 @@ export default function Array() {
     setProducts(updatedProducts);
   };
 
+  //List of books
+  const [books, setBooks] = useState([]);
+  const [title, setTitle] = useState('');
+  const [author, setAuthor] = useState('');
+  const [editId, setEditId] = useState(null);
+  const [editTitle, setEditTitle] = useState('');
+  const [editAuthor, setEditAuthor] = useState('');
+
+   // Function to add a new book
+   const addBook = () => {
+    if (title && author) {
+      const newBook = {
+        id: Date.now(),
+        title,
+        author,
+      };
+      setBooks([...books, newBook]);
+      setTitle('');
+      setAuthor('');
+    }
+  };
+
+  // Function to remove a book by id
+  const removeBook = (id) => {
+    setBooks(books.filter(book => book.id !== id));
+  };
+
+  // Function to start editing a book
+  const startEditing = (book) => {
+    setEditId(book.id);
+    setEditTitle(book.title);
+    setEditAuthor(book.author);
+  };
+
+  // Function to update a book's information
+  const updateBook = () => {
+    setBooks(books.map(book =>
+      book.id === editId
+        ? { ...book, title: editTitle, author: editAuthor }
+        : book
+    ));
+    setEditId(null);
+    setEditTitle('');
+    setEditAuthor('');
+  };
+
+
   
   
   
@@ -204,11 +251,82 @@ export default function Array() {
 
 
         <h1 className="mt-8 mb-6 text-3xl font-bold tracking-tight text-black md:text-4xl lg:text-2xl">
-            List of products, and users can add new products to the list.
+            Array of Objects
         </h1>
         <div className="flex items-center justify-center h-96 bg-gray-100">
         <div className="container mx-auto w-1/2 bg-white p-8 rounded shadow-lg">
+        <h2 className="text-xl font-bold mb-4">Book List</h2>
+
+      {/* Add new book form */}
+      <div className="mb-4">
+        <input
+          type="text"
+          className="border p-2 mr-2"
+          placeholder="Title"
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
+        />
         
+        <input
+          type="text"
+          className="border p-2 mr-2"
+          placeholder="Author"
+          value={author}
+          onChange={(e) => setAuthor(e.target.value)}
+        />
+        <button
+          className="bg-blue-500 text-white p-2"
+          onClick={addBook}
+        >
+          Add Book
+        </button>
+      </div>
+
+      {/* Edit book form */}
+      {editId && (
+        <div className="mb-4">
+          <input
+            type="text"
+            className="border p-2 mr-2"
+            placeholder="Edit Title"
+            value={editTitle}
+            onChange={(e) => setEditTitle(e.target.value)}
+          />
+          <input
+            type="text"
+            className="border p-2 mr-2"
+            placeholder="Edit Author"
+            value={editAuthor}
+            onChange={(e) => setEditAuthor(e.target.value)}
+          />
+          <button className="bg-green-500 text-white p-2" onClick={updateBook}>
+            Save
+          </button>
+        </div>
+      )}
+
+      {/* Display book list */}
+      <ul>
+        {books.map(book => (
+          <li key={book.id} className="border p-2 mb-2 flex justify-between">
+            <span>{book.title} - {book.author}</span>
+            <div>
+              <button
+                className="bg-yellow-500 text-white p-2 mr-2"
+                onClick={() => startEditing(book)}
+              >
+                Edit
+              </button>
+              <button
+                className="bg-red-500 text-white p-2"
+                onClick={() => removeBook(book.id)}
+              >
+                Remove
+              </button>
+            </div>
+          </li>
+        ))}
+      </ul>
         </div>
         </div>
         
