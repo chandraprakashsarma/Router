@@ -45,6 +45,20 @@ const users = [
             
         },
         {
+          name: 'Spread Operator',
+            
+          route: '/spread_operator',
+            
+            
+        },
+        {
+          name: 'Map Function',
+            
+          route: '/map_function',
+            
+            
+        },
+        {
           name: 'Getter Setter',
             
           route: '/UIComponent',
@@ -72,13 +86,7 @@ const users = [
               
               
           },
-          {
-            name: 'Map',
-              
-            route: '/UIComponent',
-              
-              
-          },
+          
           {
             name: 'JS Async',
               
@@ -114,13 +122,7 @@ const users = [
                 
                 
             },
-            {
-                name: 'Operator',
-                  
-                route: '/UIComponent',
-                  
-                  
-              },
+            
               {
                 name: 'Comparision',
                   
@@ -180,7 +182,7 @@ export default function Javascript() {
         
        
         <h1 className="mt-8 mb-6 text-3xl font-bold tracking-tight text-black md:text-4xl lg:text-6xl">
-            Javascript Basic Concept
+            Javascript React Basic Concept
         </h1>
 
     <div className="grid grid-cols-4 gap-4 ">

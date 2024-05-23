@@ -49,6 +49,11 @@ import ControlleComponent from './components/State/ControlleComponent/ControlleC
 import InputControll from './components/State/ControlleComponent/InputControll.jsx'
 import Array from './components/Javascript/Array/Array.jsx'
 import EcommerceApp from './components/ContextAPI/E-commerceApp/E-commerceApp.jsx'
+import Api from './components/API/Api.jsx'
+import AxiosApi from './components/API/Axios.jsx'
+import FetchApi from './components/API/Fetch.jsx'
+import SpreadOperator from './components/Javascript/SpreadOperator/spreadoperator.jsx'
+import MapFunction from './components/Javascript/Map/Map.jsx'
 
 
 
@@ -96,6 +101,8 @@ const router = createBrowserRouter(
       <Route path='loops' element={<Loops/>} />
       <Route path='map' element={<Map/>} />
       <Route path='array' element={<Array/>} />
+      <Route path='spread_operator' element={<SpreadOperator/>} />
+      <Route path='map_function' element={<MapFunction/>} />
 
 
 
@@ -141,6 +148,13 @@ const router = createBrowserRouter(
       <Route path='multi-language_support' element={<MultiLangApp/>} />
       <Route path='multiple_contexts' element={<MultiContextsApp/>} />
       <Route path='ecommerce_app' element={<EcommerceApp/>} />
+
+
+
+      { /*API Axios, Fetch Example */ }
+      <Route path='api' element={<Api/>} />
+      <Route path='axios_api' element={<AxiosApi/>} />
+      <Route path='fetch_api' element={<FetchApi/>} />
     
       
     
@@ -164,7 +178,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 )
 
 {/*
-
+<>
 <h1 className="mt-8 mb-6 text-3xl font-bold tracking-tight text-black md:text-4xl lg:text-2xl">
      List of products, and users can add new products to the list.
 </h1>
@@ -173,5 +187,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         
 </div>
 </div>
+</>
 
 */}
