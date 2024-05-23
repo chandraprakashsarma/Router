@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const users = [
   {
-    name: 'Variable',
+    name: 'Data Type',
     route: '/variable',
   },
     {
@@ -25,10 +25,20 @@ const users = [
      name: 'Spread Operator',      
      route: '/spread_operator',
    },
+
    {
-     name: 'Event Handling',
-    route: '/event_handling',
-   },
+    name: 'Compare Operator',      
+    route: '/compare_operator',
+  },
+  {
+    name: 'Destructuring',      
+    route: '/destructuring',
+  },
+  {
+    name: 'Key',      
+    route: '/key',
+  },
+   
                  
                                   
   ]
