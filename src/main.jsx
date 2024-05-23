@@ -54,6 +54,8 @@ import AxiosApi from './components/API/Axios.jsx'
 import FetchApi from './components/API/Fetch.jsx'
 import SpreadOperator from './components/Javascript/SpreadOperator/spreadoperator.jsx'
 import MapFunction from './components/Javascript/Map/Map.jsx'
+import FilterMethod from './components/Javascript/Filter/Filter.jsx'
+import AsyncAwait from './components/API/AsyncAwait.jsx'
 
 
 
@@ -103,6 +105,7 @@ const router = createBrowserRouter(
       <Route path='array' element={<Array/>} />
       <Route path='spread_operator' element={<SpreadOperator/>} />
       <Route path='map_function' element={<MapFunction/>} />
+      <Route path='filter_method' element={<FilterMethod/>} />
 
 
 
@@ -151,10 +154,11 @@ const router = createBrowserRouter(
 
 
 
-      { /*API Axios, Fetch Example */ }
+      { /*API Axios, Fetch, Async-Await Example */ }
       <Route path='api' element={<Api/>} />
       <Route path='axios_api' element={<AxiosApi/>} />
       <Route path='fetch_api' element={<FetchApi/>} />
+      <Route path='async_await' element={<AsyncAwait/>} />
     
       
     
@@ -179,14 +183,15 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
 {/*
 <>
+
 <h1 className="mt-8 mb-6 text-3xl font-bold tracking-tight text-black md:text-4xl lg:text-2xl">
      List of products, and users can add new products to the list.
 </h1>
 <div className="flex items-center justify-center h-96 bg-gray-100">
 <div className="container mx-auto w-1/2 bg-white p-8 rounded shadow-lg">
         
-</div>
-</div>
+</div></div>
+
 </>
 
 */}

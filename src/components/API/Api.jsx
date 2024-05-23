@@ -10,6 +10,10 @@ const users = [
         name: 'Axios',
         route: '/axios_api',
       },
+      {
+        name: 'Async/Await',
+        route: '/async_await',
+      },
                                 
   ]
 
