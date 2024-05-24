@@ -59,6 +59,7 @@ import AsyncAwait from './components/API/AsyncAwait.jsx'
 import CompareOperator from './components/Javascript/CompareOperator.jsx'
 import Destructuring from './components/Javascript/Destructuring/Destructuring.jsx'
 import Key from './components/Javascript/Key/Key.jsx'
+import EventObject from './components/EventsHandling/EventObject.jsx'
 
 
 
@@ -141,9 +142,14 @@ const router = createBrowserRouter(
 
 
 
-
+      { /*Event Handling Example */ }
       <Route path='event_handling' element={<EventHandling/>} />
       <Route path='button_component' element={<ButtonComponent/>} />
+      <Route path='event_object' element={<EventObject/>} />
+
+
+
+
       <Route path='user/:userid' element={<User />} />
       <Route 
       loader={githubInfoLoader}

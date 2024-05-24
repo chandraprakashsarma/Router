@@ -4,6 +4,10 @@ import { Link } from 'react-router-dom';
 
 const users = [
   {
+    name: 'Event Object',
+    route: '/event_object',
+  },
+  {
     name: 'Basic Button Component',
     route: '/button_component',
   },
@@ -64,7 +68,7 @@ export default function EventHandling() {
     {users.map((user, index) => (
         <Link to={user.route} key={index} className=" p-2 rounded-md border border-gray-500 hover:bg-gray-200">
           {/*<img src={user.src} alt={user.alt} className="h-auto max-w-full rounded-lg" />*/}
-          <h1 className="mt-8 mb-6 text-3xl font-bold tracking-tight text-black md:text-4xl lg:text-3xl">{user.name}</h1>
+          <h1 className="mt-8 mb-6 text-3xl font-bold tracking-tight text-black md:text-4xl lg:text-2xl">{user.name}</h1>
           {/*<h1 className="mt-8 mb-6 text-3xl font-bold tracking-tight text-black md:text-4xl lg:text-2xl">{user.position}</h1>*/}
         </Link>
       ))}    
