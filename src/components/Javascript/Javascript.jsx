@@ -38,6 +38,10 @@ const users = [
     name: 'Key',      
     route: '/key',
   },
+  {
+    name: 'Template Literals',      
+    route: '/template_literals',
+  },
    
                  
                                   
