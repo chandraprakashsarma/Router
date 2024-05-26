@@ -61,6 +61,11 @@ import Destructuring from './components/Javascript/Destructuring/Destructuring.j
 import Key from './components/Javascript/Key/Key.jsx'
 import EventObject from './components/EventsHandling/EventObject.jsx'
 import TemplateLiterals from './components/Javascript/Template Literals/TemplateLiterals.jsx'
+import Debounce from './components/Javascript/Debounce/Debounce.jsx'
+import ShallowCopy from './components/Javascript/ShallowDeepCopy/ShallowCopy.jsx'
+import DeepCopy from './components/Javascript/ShallowDeepCopy/DeepCopy.jsx'
+import Reducer from './components/Javascript/Reducer/Reducer.jsx'
+import CallbackFunction from './components/Javascript/CallbackFunction/CallbackFunction.jsx'
 
 
 
@@ -115,6 +120,11 @@ const router = createBrowserRouter(
       <Route path='destructuring' element={<Destructuring/>} />
       <Route path='key' element={<Key/>} />
       <Route path='template_literals' element={<TemplateLiterals/>} />
+      <Route path='debounce' element={<Debounce/>} />
+      <Route path='shallow_copy' element={<ShallowCopy/>} />
+      <Route path='deep_copy' element={<DeepCopy/>} />
+      <Route path='reducer' element={<Reducer/>} />
+      <Route path='callback_function' element={<CallbackFunction/>} />
 
 
 

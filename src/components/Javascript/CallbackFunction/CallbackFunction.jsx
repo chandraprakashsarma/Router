@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-export default function TemplateLiterals() {
+export default function CallbackFunction() {
     return (
 
     <>

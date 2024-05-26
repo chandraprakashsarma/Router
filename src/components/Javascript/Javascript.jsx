@@ -42,6 +42,26 @@ const users = [
     name: 'Template Literals',      
     route: '/template_literals',
   },
+  {
+    name: 'Debounce',      
+    route: '/debounce',
+  },
+  {
+    name: 'Shallow Copy',      
+    route: '/shallow_copy',
+  },
+  {
+    name: 'Deep Copy',      
+    route: '/deep_copy',
+  },
+  {
+    name: 'Reducer',      
+    route: '/reducer',
+  },
+  {
+    name: 'Callback Function',
+    route: '/callback_function',
+  },
    
                  
                                   
