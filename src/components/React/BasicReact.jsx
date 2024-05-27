@@ -5,122 +5,72 @@ import { Link } from 'react-router-dom';
 const users = [
     {
       name: 'State',
-        
       route: '/state',
-        
-        
     },
     {
-        name: 'Props',
-          
-        route: '/props',
-          
-          
+        name: 'Props',    
+        route: '/props',        
       },
       {
         name: 'Context API',
-          
         route: '/context_api',
-          
-          
       },
       {
-        name: 'Event Handling',
-          
+        name: 'Event Handling',    
         route: '/event_handling',
-          
-          
       },
       {
           name: 'API',
-            
           route: '/api',
-            
-            
         },
         {
           name: 'Router',
-            
           route: '/UIComponent',
-            
-            
         },
         {
           name: 'Hooks',
-            
-          route: '/UIComponent',
-            
-            
+          route: '/hooks',    
         },
         {
           name: 'Controlled Components',
-            
           route: '/UIComponent',
-            
-            
+    
+    
         },
-        {
-            name: 'useState',
-              
-            route: '/UIComponent',
-              
-              
-          },
-          {
-            name: 'useEffect',
-              
-            route: '/UIComponent',
-              
-              
-          },
-          {
-            name: 'useContext',
-              
-            route: '/UIComponent',
-              
-              
-          },
-          {
-            name: 'useRef',
-              
-            route: '/UIComponent',
-              
-              
-          },
           {
               name: 'Conditional Rendering',
-                
+         
               route: '/UIComponent',
-                
-                
+        
+        
             },
             {
               name: 'Handle Forms',
-                
+         
               route: '/UIComponent',
-                
-                
+         
+         
             },
             {
               name: 'Loops',
-                
+        
               route: '/loops',
-                
-                
+        
+        
             },
             {
               name: 'Lifecycle Methods',
+        
+      route: '/UIComponent',
                 
-              route: '/UIComponent',
-                
-                
+        
             },
             {
                 name: 'Forms',
-                  
+           
                 route: '/UIComponent',
-                  
-                  
+           
+           
               },
                                 
   ]

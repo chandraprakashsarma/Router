@@ -66,6 +66,7 @@ import ShallowCopy from './components/Javascript/ShallowDeepCopy/ShallowCopy.jsx
 import DeepCopy from './components/Javascript/ShallowDeepCopy/DeepCopy.jsx'
 import Reducer from './components/Javascript/Reducer/Reducer.jsx'
 import CallbackFunction from './components/Javascript/CallbackFunction/CallbackFunction.jsx'
+import Hooks from './components/Hooks/Hooks.jsx'
 
 
 
@@ -154,6 +155,16 @@ const router = createBrowserRouter(
 
 
 
+
+      { /*Hooks Example */ }
+      <Route path='hooks' element={<Hooks/>} />
+    
+      
+
+
+
+
+
       { /*Event Handling Example */ }
       <Route path='event_handling' element={<EventHandling/>} />
       <Route path='button_component' element={<ButtonComponent/>} />
@@ -217,6 +228,9 @@ export default function TemplateLiterals() {
     return (
 
         <>
+         <h1 className="mt-8 mb-6 text-3xl font-bold tracking-tight text-black md:text-4xl lg:text-6xl">
+            Hooks Basic Concept
+        </h1>
 
         <h1 className="mt-8 mb-6 text-3xl font-bold tracking-tight text-black md:text-4xl lg:text-2xl">
             Template Literals
