@@ -10,7 +10,7 @@ const users = [
           },
           {
             name: 'useEffect',
-            route: '/UIComponent'
+            route: '/use_effect_app'
           },
           {
             name: 'useContext',

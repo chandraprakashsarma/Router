@@ -32,47 +32,21 @@ const users = [
           route: '/hooks',    
         },
         {
+          name: 'Redux - RTK',
+          route: '/redux_rtk',    
+        },
+        {
+          name: 'Lifecycle Methods',
+          route: '/lifecycle_methods',    
+        },
+        {
           name: 'Controlled Components',
-          route: '/UIComponent',
-    
-    
+          route: '/UIComponent',                 
         },
           {
               name: 'Conditional Rendering',
-         
               route: '/UIComponent',
-        
-        
-            },
-            {
-              name: 'Handle Forms',
-         
-              route: '/UIComponent',
-         
-         
-            },
-            {
-              name: 'Loops',
-        
-              route: '/loops',
-        
-        
-            },
-            {
-              name: 'Lifecycle Methods',
-        
-      route: '/UIComponent',
-                
-        
-            },
-            {
-                name: 'Forms',
-           
-                route: '/UIComponent',
-           
-           
-              },
-                                
+          }
   ]
 
 export default function BasicReact() {

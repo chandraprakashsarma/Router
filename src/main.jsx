@@ -67,6 +67,10 @@ import DeepCopy from './components/Javascript/ShallowDeepCopy/DeepCopy.jsx'
 import Reducer from './components/Javascript/Reducer/Reducer.jsx'
 import CallbackFunction from './components/Javascript/CallbackFunction/CallbackFunction.jsx'
 import Hooks from './components/Hooks/Hooks.jsx'
+import ReduxRTK from './components/ReduxToolKit/ReduxRTK.jsx'
+import LifecycleMethods from './components/LifecycleMethods/LifecycleMethods.jsx'
+
+
 
 
 
@@ -156,8 +160,23 @@ const router = createBrowserRouter(
 
 
 
+      { /* Redux - RTK  Example */ }
+      <Route path='redux_rtk' element={<ReduxRTK/>} />
+
+
+      { /* Lifecycle Methods  Example */ }
+      <Route path='lifecycle_methods' element={<LifecycleMethods/>} />
+
+
+
+
       { /*Hooks Example */ }
       <Route path='hooks' element={<Hooks/>} />
+      
+    
+      
+      
+      
     
       
 
@@ -228,7 +247,7 @@ export default function TemplateLiterals() {
     return (
 
         <>
-         <h1 className="mt-8 mb-6 text-3xl font-bold tracking-tight text-black md:text-4xl lg:text-6xl">
+         <h1 className="mt-8 mb-6 text-3xl font-bold tracking-tight text-black md:text-4xl lg:text-4xl">
             Hooks Basic Concept
         </h1>
 
