@@ -62,6 +62,10 @@ const users = [
     name: 'Callback Function',
     route: '/callback_function',
   },
+  {
+    name: 'Equality Operator',
+    route: '/equality_operator',
+  },
 
    
                  

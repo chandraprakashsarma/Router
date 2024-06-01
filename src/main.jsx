@@ -69,6 +69,7 @@ import CallbackFunction from './components/Javascript/CallbackFunction/CallbackF
 import Hooks from './components/Hooks/Hooks.jsx'
 import ReduxRTK from './components/ReduxToolKit/ReduxRTK.jsx'
 import LifecycleMethods from './components/LifecycleMethods/LifecycleMethods.jsx'
+import EqualityOperator from './components/Javascript/Operator/EqualityOperator.jsx'
 
 
 
@@ -130,6 +131,7 @@ const router = createBrowserRouter(
       <Route path='deep_copy' element={<DeepCopy/>} />
       <Route path='reducer' element={<Reducer/>} />
       <Route path='callback_function' element={<CallbackFunction/>} />
+      <Route path='equality_operator' element={<EqualityOperator/>} />
 
 
 
