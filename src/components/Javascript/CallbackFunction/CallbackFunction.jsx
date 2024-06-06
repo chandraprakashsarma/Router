@@ -31,6 +31,21 @@ export default function CallbackFunction() {
         setMessageOne(`You entered: ${inputValue}`)
     }
 
+    //ToDo List Add and Remove Task
+    const [tasks, setTasks] = useState([]);
+  const [newTask, setNewTask] = useState('');
+
+  const addTask = () => {
+    if (newTask.trim()) {
+      setTasks([...tasks, newTask]);
+      setNewTask('');
+    }
+  };
+
+  const removeTask = (index) => {
+    setTasks(tasks.filter((_, i) => i !== index));
+  };
+
 
 
 
@@ -118,10 +133,42 @@ export default function CallbackFunction() {
 
 
         <h1 className="mt-8 mb-6 text-3xl font-bold tracking-tight text-black md:text-4xl lg:text-2xl">
-            Managing State with Callback Functions
+            Create the ToDo List Component
         </h1>
         <div className="flex items-center justify-center h-96 bg-gray-100">
         <div className="container mx-auto w-1/2 bg-white p-8 rounded shadow-lg">
+            <h1 className="text-2xl font-bold mb-4">ToDo List</h1>
+            <div className="mb-4">
+            <input
+                type="text"
+                className="border p-2 w-full rounded"
+                placeholder="Add a new task"
+                value={newTask}
+                onChange={(e) => setNewTask(e.target.value)}
+            />
+            <button
+                className="mt-2 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
+                onClick={addTask}
+            >
+                Add Task
+            </button>
+            </div>
+            <ul className="space-y-2">
+            {tasks.map((task, index) => (
+                <li
+                key={index}
+                className="flex justify-between items-center p-2 border rounded"
+                >
+                {task}
+                <button
+                    className="bg-red-500 text-white py-1 px-2 rounded hover:bg-red-600"
+                    onClick={() => removeTask(index)}
+                >
+                    Remove
+                </button>
+                </li>
+            ))}
+            </ul>
                 
         </div></div>
 
