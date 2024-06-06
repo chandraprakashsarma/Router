@@ -30,7 +30,7 @@ const users = [
           },
           {
             name: 'useRef',
-            route: '/UIComponent',
+            route: '/use_ref_component',
           },
           {
             name: 'useImperativeHandle',

@@ -13,12 +13,20 @@ const users = [
       route: '/array',
     },
     {
+      name: 'Object',
+      route: '/array',
+    },
+    {
       name: 'Map Method',
       route: '/map_function',  
     },
     {
       name: 'Filter Method',
       route: '/filter_method',  
+    },
+    {
+      name: 'Reduce Method',      
+      route: '/reducer',
     },
   
    {
@@ -53,10 +61,6 @@ const users = [
   {
     name: 'Deep Copy',      
     route: '/deep_copy',
-  },
-  {
-    name: 'Reducer',      
-    route: '/reducer',
   },
   {
     name: 'Callback Function',

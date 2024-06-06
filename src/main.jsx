@@ -70,6 +70,7 @@ import Hooks from './components/Hooks/Hooks.jsx'
 import ReduxRTK from './components/ReduxToolKit/ReduxRTK.jsx'
 import LifecycleMethods from './components/LifecycleMethods/LifecycleMethods.jsx'
 import EqualityOperator from './components/Javascript/Operator/EqualityOperator.jsx'
+import RefComponent from './components/Hooks/useRef/useRef.jsx'
 
 
 
@@ -174,6 +175,9 @@ const router = createBrowserRouter(
 
       { /*Hooks Example */ }
       <Route path='hooks' element={<Hooks/>} />
+      <Route path='use_ref_component' element={<RefComponent/>} />
+      
+    
       
     
       
