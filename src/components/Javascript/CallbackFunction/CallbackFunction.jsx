@@ -36,11 +36,12 @@ export default function CallbackFunction() {
   const [newTask, setNewTask] = useState('');
 
   const addTask = () => {
-    if (newTask.trim()) {
-      setTasks([...tasks, newTask]);
-      setNewTask('');
+    if(newTask.trim()){
+        setTasks([...tasks,newTask])
+        setNewTask('')
+        
     }
-  };
+  }
 
   const removeTask = (index) => {
     setTasks(tasks.filter((_, i) => i !== index));
@@ -144,7 +145,7 @@ export default function CallbackFunction() {
                 className="border p-2 w-full rounded"
                 placeholder="Add a new task"
                 value={newTask}
-                onChange={(e) => setNewTask(e.target.value)}
+                onChange={(e)=>setNewTask(e.target.value)}
             />
             <button
                 className="mt-2 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"

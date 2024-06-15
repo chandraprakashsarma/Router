@@ -7,6 +7,7 @@ export default function Destructuring() {
   const [age, setAge] = useState(user.age);
    // Destructuring props
    const { name, email } = user;
+  
 
    const userOne = {
     name: 'Alice Wonderland',
@@ -35,6 +36,7 @@ export default function Destructuring() {
             <p>Email: {email}</p>
             <p>Age: {age}</p>
             <button onClick={() => setAge(age + 1)}>Increase Age</button>
+        
                 
         </div></div>
 

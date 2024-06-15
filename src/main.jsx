@@ -71,6 +71,7 @@ import ReduxRTK from './components/ReduxToolKit/ReduxRTK.jsx'
 import LifecycleMethods from './components/LifecycleMethods/LifecycleMethods.jsx'
 import EqualityOperator from './components/Javascript/Operator/EqualityOperator.jsx'
 import RefComponent from './components/Hooks/useRef/useRef.jsx'
+import ReactKey from './components/Key/ReactKey.jsx'
 
 
 
@@ -230,7 +231,12 @@ const router = createBrowserRouter(
 
 
       { /*Props Route Example */ }
-      <Route path='props' element={<Props/>} />
+      <Route path='props' element={<Props title="Props Pass and Destructuring"/>} />
+
+
+      { /*React - Key Example */ }
+      <Route path='react_key' element={<ReactKey/>} />
+      
 
 
       

@@ -16,6 +16,10 @@ const users = [
         route: '/context_api',
       },
       {
+        name: 'Redux - RTK',
+        route: '/redux_rtk',    
+      },
+      {
         name: 'Event Handling',    
         route: '/event_handling',
       },
@@ -31,17 +35,18 @@ const users = [
           name: 'Hooks',
           route: '/hooks',    
         },
-        {
-          name: 'Redux - RTK',
-          route: '/redux_rtk',    
-        },
+        
         {
           name: 'Lifecycle Methods',
           route: '/lifecycle_methods',    
         },
         {
-          name: 'Controlled Components',
-          route: '/UIComponent',                 
+          name: 'Conditional Rendering',
+          route: '/UIComponent',
+      },
+        {
+          name: 'Key - React',
+          route: '/react_key',                 
         },
           {
               name: 'Conditional Rendering',
