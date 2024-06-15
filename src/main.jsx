@@ -72,6 +72,7 @@ import LifecycleMethods from './components/LifecycleMethods/LifecycleMethods.jsx
 import EqualityOperator from './components/Javascript/Operator/EqualityOperator.jsx'
 import RefComponent from './components/Hooks/useRef/useRef.jsx'
 import ReactKey from './components/Key/ReactKey.jsx'
+import StateLifting from './components/State/State Lifting/StateLifting.jsx'
 
 
 
@@ -145,6 +146,7 @@ const router = createBrowserRouter(
 
       { /* State Example */ }
       <Route path='state' element={<State/>} />
+      <Route path='state_lifting' element={<StateLifting/>} />
       <Route path='controlle_component' element={<ControlleComponent/>} />
       <Route path='input_controll' element={<InputControll/>} />
       <Route path='count_increment' element={<Counter/>} />

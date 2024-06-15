@@ -3,6 +3,11 @@ import { Link } from 'react-router-dom';
 
 
 const users = [
+     
+    {
+      name: 'State Lifting',
+    route: '/state_lifting'
+    },
     {
       name: 'Controlle Component',
      route: '/controlle_component'
@@ -60,17 +65,6 @@ const users = [
         route: '/modal_example',
       },              
   ]
-
-
-
-
-
-
-
-
-
-
-
 
 
 
