@@ -18,7 +18,7 @@ const users = [
           },
           {
             name: 'useReducer',
-            route: '/UIComponent',
+            route: '/use_reducer_app',
           },
           {
             name: 'useCallback',

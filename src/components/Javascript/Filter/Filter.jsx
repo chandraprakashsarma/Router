@@ -9,6 +9,7 @@ export default function FilterMethod() {
       ];
     // Filtering the data array to get items with category 'A'
   const filteredData = data.filter(item => item.category === 'A');
+  
 
   // State for managing the search query entered by the user
   const [searchQuery, setSearchQuery] = useState('');
@@ -40,6 +41,8 @@ export default function FilterMethod() {
           <li key={item.id}>{item.name}</li>
         ))}
       </ul>
+    
+      
     </div>
     </div>
 
