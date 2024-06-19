@@ -1,5 +1,7 @@
 import React, {useReducer} from 'react'
 import ShoppingCart from './ShoppingCart'
+import Counter from './CounterCAR/Counter'
+
 
 const initialState = {
     name: '',
@@ -24,7 +26,9 @@ function reducer(state,action){
 
 
 export default function UseReducerApp() {
+
     const [state, dispatch] = useReducer(reducer,initialState)
+    
     console.log(state)
 
 
@@ -99,6 +103,14 @@ export default function UseReducerApp() {
         <div className="flex items-center justify-center h-96 bg-gray-100">
         <div className="container mx-auto w-1/2 bg-white p-8 rounded shadow-lg">
                 <ShoppingCart/>
+        </div></div>
+
+        <h1 className="mt-8 mb-6 text-3xl font-bold tracking-tight text-black md:text-4xl lg:text-2xl">
+            Counter With Contect API and useReducer
+        </h1>
+        <div className="flex items-center justify-center h-96 bg-gray-100">
+        <div className="container mx-auto w-1/2 bg-white p-8 rounded shadow-lg">
+                {/*<Counter/>*/}
         </div></div>
 
 

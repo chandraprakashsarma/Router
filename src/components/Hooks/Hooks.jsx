@@ -31,19 +31,7 @@ const users = [
           {
             name: 'useRef',
             route: '/use_ref_component',
-          },
-          {
-            name: 'useImperativeHandle',
-            route: '/UIComponent',
-          },
-          {
-            name: 'useLayoutEffect',
-            route: '/UIComponent',
-          },
-          {
-            name: 'useDebugValue',
-            route: '/UIComponent',
-          },
+          }
                                 
   ]
 
