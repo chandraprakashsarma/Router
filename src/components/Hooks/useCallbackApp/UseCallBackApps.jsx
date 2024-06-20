@@ -1,4 +1,5 @@
 import React from 'react'
+import UseCallbackChild from './UseCallbackChild'
 
 function UseCallBackApps() {
   return (
@@ -12,7 +13,7 @@ function UseCallBackApps() {
         </h1>
         <div className="flex items-center justify-center h-96 bg-gray-100">
         <div className="container mx-auto w-1/2 bg-white p-8 rounded shadow-lg">
-                
+                <UseCallbackChild/>
         </div></div>
 
         </>
