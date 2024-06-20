@@ -22,7 +22,7 @@ const users = [
           },
           {
             name: 'useCallback',
-            route: '/UIComponent',
+            route: '/use_call_app',
           },
           {
             name: 'useMemo',

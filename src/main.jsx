@@ -74,6 +74,7 @@ import RefComponent from './components/Hooks/useRef/useRef.jsx'
 import StateLifting from './components/State/State Lifting/StateLifting.jsx'
 import UseReducerApp from './components/Hooks/useReducer/UseReducerApp.jsx'
 import UseEffectApp from './components/Hooks/useEffect/UseEffectApp.jsx'
+import UseCallBackApps from './components/Hooks/useCallbackApp/UseCallBackApps.jsx'
 
 
 
@@ -182,6 +183,8 @@ const router = createBrowserRouter(
       <Route path='use_ref_component' element={<RefComponent/>} />
       <Route path='use_reducer_app' element={<UseReducerApp/>} />
       <Route path='use_effect_app' element={<UseEffectApp/>} />
+      <Route path='use_call_app' element={<UseCallBackApps/>} />
+    
     
     
     
