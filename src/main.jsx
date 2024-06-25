@@ -27,8 +27,7 @@ import Counter from "./components/State/Counter.jsx";
 import TodoList from "./components/State/TodoList.jsx";
 import Form from "./components/State/Form.jsx";
 import WeatherApp from "./components/State/WeatherApp.jsx";
-import ArrowFunction from "./components/Javascript/ArrowFunction.jsx";
-import Function from "./components/Javascript/Function.jsx";
+import Function from "./components/Javascript/Function/Function.jsx";
 import EventHandling from "./components/EventsHandling/EventHandling.jsx";
 import ButtonComponent from "./components/EventsHandling/ButtonComponent.jsx";
 import Loops from "./components/Loops/Loops.jsx";
@@ -80,6 +79,7 @@ import StateLifting from "./components/State/State Lifting/StateLifting.jsx";
 import UseReducerApp from "./components/Hooks/useReducer/UseReducerApp.jsx";
 import UseEffectApp from "./components/Hooks/useEffect/UseEffectApp.jsx";
 import UseCallBackApps from "./components/Hooks/useCallbackApp/UseCallBackApps.jsx";
+import HigherOrderFunctions from "./components/Javascript/Function/HigherOrderFunctions/HigherOrderFunctions.jsx";
 
 // const router = createBrowserRouter([
 //   {
@@ -118,7 +118,8 @@ const router = createBrowserRouter(
       <Route path="javascript" element={<Javascript />} />
       <Route path="variable" element={<Variable />} />
       <Route path="function" element={<Function />} />
-      <Route path="arrow_function" element={<ArrowFunction />} />
+      <Route path="higher_order_functions" element={<HigherOrderFunctions />} />
+
       <Route path="loops" element={<Loops />} />
       <Route path="map" element={<Map />} />
       <Route path="array" element={<Array />} />
