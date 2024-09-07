@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
 import "./index.css";
 import {
   Route,
@@ -197,6 +196,7 @@ const router = createBrowserRouter(
       <Route path="axios_api" element={<AxiosApi />} />
       <Route path="fetch_api" element={<FetchApi />} />
       <Route path="async_await" element={<AsyncAwait />} />
+      
 
       {/*Props Route Example */}
       <Route path="props" element={<Props />} />

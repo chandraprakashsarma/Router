@@ -14,6 +14,10 @@ const users = [
         name: 'Async/Await',
         route: '/async_await',
       },
+      {
+        name:'API Example',
+        route:'./api_example'
+      }
                                 
   ]
 
